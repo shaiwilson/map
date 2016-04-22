@@ -1,21 +1,21 @@
 /-------------------------------------------------------------------------
-/ Starter Code and GUI Application 
-/
-/ Advanced Data Structures in Java
+Implemented with Java using the google map api. Created my own intersection data pulled from a region in San Diego. 
+Using my own data structures and depth first search, breadth first search, and Dijkstra's algorithm for shortest paths. 
 /
 / Authored by @Shai Wilson:
 /
-/ Date:   04/11/2016
 /-------------------------------------------------------------------------
 
 ---------------------------------------------------------[ DESCRIPTION ]--
-
-Additionally, there is a runnable JavaFX program 
-which will help to test and demonstrate your implementations.
+SEARCH OPTIONS:
+Depth first search - 
+to keep track of where to search, I implement a stack to find the last node I tried to explore from until finding another path. 
+To keep track of the nodes that I've already visited I use a hash set so that I can add, remove, and find elements in constant time. 
+To keep track of the path from start to destination, I use a hash map which has a link to each node from which it was discovered. 
 
 -------------------------------------------------------[ FILES BY WEEK ]--
 
-Week 1 : Introduction to the course and graphs
+Week 1 : Implement graphs representation : adjacency list vs matrix
 ==============================================
 basicgraph.Graph.java
 basicgraph.GraphAdjList.java
