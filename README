@@ -8,10 +8,19 @@ Using my own data structures and depth first search, breadth first search, and D
 
 ---------------------------------------------------------[ DESCRIPTION ]--
 SEARCH OPTIONS:
-Depth first search - 
-to keep track of where to search, I implement a stack to find the last node I tried to explore from until finding another path. 
+
+Depth first search - (This can also be implemented recursively)
+To keep track of where to search, I implement a stack to find the last node I tried to explore from until finding another path. 
 To keep track of the nodes that I've already visited I use a hash set so that I can add, remove, and find elements in constant time. 
 To keep track of the path from start to destination, I use a hash map which has a link to each node from which it was discovered. 
+
+Breadth first search - 
+I explore the shortest path implementing a queue to keep track of where to search next. 
+I add nodes to the back with an enqueue and I dequeue the first item from the top of the queue.
+Each time, I look at the first item in the queue and explore out from the neighbours and mark that node as visited. 
+
+Dijkstra's algorithm - 
+
 
 -------------------------------------------------------[ FILES BY WEEK ]--
 
